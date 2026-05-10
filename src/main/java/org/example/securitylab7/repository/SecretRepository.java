@@ -1,10 +1,8 @@
-package org.example.securitylab7;
+package org.example.securitylab7.repository;
 
-import org.example.securitylab7.entity.AuditLog;
 import org.example.securitylab7.entity.Secret;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 

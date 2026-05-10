@@ -1,4 +1,4 @@
-package org.example.securitylab7;
+package org.example.securitylab7.repository;
 
 
 import org.example.securitylab7.entity.AuditLog;

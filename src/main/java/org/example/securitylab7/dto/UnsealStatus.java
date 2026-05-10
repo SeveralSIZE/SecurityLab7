@@ -1,4 +1,4 @@
-package org.example.securitylab7;
+package org.example.securitylab7.dto;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

@@ -1,9 +1,11 @@
-package org.example.securitylab7;
+package org.example.securitylab7.service;
 
 import com.codahale.shamir.Scheme;
 import jakarta.annotation.PostConstruct;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import org.example.securitylab7.dto.UnsealStatus;
+import org.example.securitylab7.VaultSealedException;
 import org.springframework.stereotype.Service;
 
 import javax.crypto.SecretKey;
@@ -24,8 +26,8 @@ public class KeyService {
     private final Map<Integer, byte[]> collectedShares = new ConcurrentHashMap<>();
     private final CryptoService cryptoService;
 
-    private static final int THRESHOLD = 3;
-    private static final int TOTAL_SHARES = 5;
+    public static final int THRESHOLD = 2;
+    private static final int TOTAL_SHARES = 3;
 
     @PostConstruct
     public void init() {

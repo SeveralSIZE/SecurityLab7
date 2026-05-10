@@ -1,4 +1,4 @@
-package org.example.securitylab7;
+package org.example.securitylab7.service;
 
 import org.springframework.stereotype.Service;
 
